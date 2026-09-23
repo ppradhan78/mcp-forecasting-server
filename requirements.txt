@@ -1,0 +1,21 @@
+# MCP
+mcp[cli]
+
+# HTTP client
+httpx
+
+# Configuration
+python-dotenv
+
+# SQL Server
+sqlalchemy
+pyodbc
+
+# MongoDB
+pymongo
+
+# Data / CSV
+pandas
+
+# Validation / models
+pydantic
