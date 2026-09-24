@@ -1,7 +1,13 @@
 from clients.weather_clients import WeatherClient
+from clients.order_clients import OrderClient
+from clients.product_clients import ProductClient
+
+
 
 
 weather_client = WeatherClient()
+order_clients = OrderClient()
+product_clients = ProductClient()
 
 
 def register_resources(mcp):
@@ -21,3 +27,28 @@ def register_resources(mcp):
             city=city.strip(),
             country_code=country_code.strip().upper()
         )
+
+    @mcp.resource(
+        "order://{orderId}"
+    )
+    async def order_resource(
+            orderId: int
+    ) -> dict:
+        """
+        Order  retrieving for current orderid.
+        """
+        return await order_clients.get_order(orderId)
+
+
+    @mcp.resource(
+        "product://{productId}"
+    )
+    async def order_resource(
+            productId: int
+    ) -> dict:
+        """
+        Order  retrieving for current orderid.
+        """
+        return await product_clients.get_Product(productId)
+
+

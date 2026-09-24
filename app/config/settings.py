@@ -13,3 +13,11 @@ class WeatherConfig:
         "WEATHER_API_URL",
         "https://api.openweathermap.org/data/2.5/weather"
     )
+
+class NorthWindConfig:
+    BASE_API_URL = os.getenv("NORTHWIND_BASE_API_URL")
+
+    if not BASE_API_URL:
+        raise ValueError(
+            "NORTHWIND_BASE_API_URL is not configured"
+        )
