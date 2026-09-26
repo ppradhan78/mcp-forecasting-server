@@ -1,5 +1,5 @@
 
-from clients.weather_clients import WeatherClient
+from app.clients.weather_clients import WeatherClient
 
 
 weather_client = WeatherClient()

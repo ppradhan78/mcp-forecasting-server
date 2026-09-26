@@ -1,6 +1,6 @@
-from clients.weather_clients import WeatherClient
-from clients.order_clients import OrderClient
-from clients.product_clients import ProductClient
+from app.clients.weather_clients import WeatherClient
+from app.clients.order_clients import OrderClient
+from app.clients.product_clients import ProductClient
 
 
 

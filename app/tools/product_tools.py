@@ -1,5 +1,5 @@
 
-from clients.product_clients import ProductClient
+from app.clients.product_clients import ProductClient
 
 
 product_clients = ProductClient()

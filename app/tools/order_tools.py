@@ -1,5 +1,5 @@
 
-from clients.order_clients import OrderClient
+from app.clients.order_clients import OrderClient
 
 
 order_clients = OrderClient()

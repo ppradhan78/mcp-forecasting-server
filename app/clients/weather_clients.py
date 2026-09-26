@@ -2,7 +2,7 @@ import logging
 
 import httpx
 
-from config.settings import WeatherConfig
+from app.config.settings import WeatherConfig
 
 
 logger = logging.getLogger(__name__)

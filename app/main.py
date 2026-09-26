@@ -1,11 +1,13 @@
 from mcp.server.fastmcp import FastMCP
 
-from tools.weather_tools import register_weather_tools
-from tools.order_tools import register_order_tools
-from tools.product_tools import register_product_tools
+from app.tools.weather_tools import register_weather_tools
+from app.tools.order_tools import register_order_tools
+from app.tools.product_tools import register_product_tools
 
-from resources.business_resources import register_resources
-from prompts.business_prompts import register_prompts
+from app.resources.business_resources import register_resources
+from app.prompts.business_prompts import register_prompts
+
+
 
 
 mcp = FastMCP("Enterprise TANDMS MCP Server")

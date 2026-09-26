@@ -2,7 +2,7 @@ import logging
 
 import httpx
 
-from config.settings import NorthWindConfig
+from app.config.settings import NorthWindConfig
 
 
 logger = logging.getLogger(__name__)

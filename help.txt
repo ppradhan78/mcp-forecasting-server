@@ -25,5 +25,9 @@ pip install -r requirements.txt
 python -m pip install uv
 
 
-mcp dev app/main.py         
-python -m app.main       
+mcp server interface
+mcp dev app\main.py 
+################################
+mcp server no interface
+
+python -m app.main
